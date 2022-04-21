@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>İbrahim Eres</title>
+        <link href="styles.css" rel="stylesheet" />
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">İçerik</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Hakkımda</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="proje.html">Bootstrap 5 Range</a></li>
+                        <li class="nav-item"><a class="nav-link" href="bootstrap.html">Kurulum</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="text-center mt-5">
+                <h1>Bootstrap 5 Range</h1>
+                <p class="lead">Bu sayfada Bootstrap 5 ile range yapısının ne olduğunu, ne işe yaradığını, özelliklerini ve benzer yapılar ile kıyaslamasını sizlere aktaracağım.</p>
+                <p><h5>Range Nedir? Ne işe yarar?</h5>Range, üzerinde kaydırma çubuğu bulunan ve değer değiştirmeye yarayan bir input nesnesidir. Üzerinde ki kaydırma çubuğunu kaydırarak belirlenen komutu veya bir değeri sayfa içinde manuel olarak değiştirmeye yarar.</p>
+                
+                    <h2>Custom Range</h2>
+                    <p>Bu range yapısı basit bir kaydırma çubuğu ile akıcı bir input nesnesidir. Custom Range ile değerleri istediğiniz şekilde manuel değişitirebilirsiniz. Bu range yapısının özelliği ise bir sınırın olmaması. Belli iki değer arasında istediğiniz değeri verebilirsiniz.</p>
+                    <p>
+                        Costum range input yapısını aşağıdaki kod yapısı ile oluşturdum;    
+                        <xmp  style="color:green">
+                            <input type="range" class="form-range" id="customRange" name="points">              
+                          </xmp>
+                    </p>
+                    <input type="range" class="form-range" id="customRange" name="points">
+                    <p>Örnek olarak aşağıda göreceğiniz şekilde range input yapısı ile değer değiştirerek resmi döndürebilirsiniz.</p>
+                    <img src="input-range-nesnesi-olusturma.webp"></img>
+               
+                <h2>Step</h2>
+                <p>Varsayılan olarak, her numara arasındaki aralık 1'dir. step niteliğini kullanarak bunu değiştirebilirsiniz.</p>
+                <p>
+                   step input yapısını aşağıdaki kod yapısı ile oluşturdum;    
+                    <xmp  style="color:green">
+                        <input type="range" class="form-range" id="customRange" name="points1" step="10">
+                    </xmp>
+                </p>
+                <input type="range" class="form-range" id="customRange" name="points1" step="10">
+                <h2>Min ve Max</h2>
+                <p>Varsayılan olarak minimum değer 0 ve maksimum değer 100'dür. Min ve max değerini değiştirmek için kullanabilirsiniz. </p>
+                <p>
+                    Min ve Max input yapısını aşağıdaki kod yapısı ile oluşturdum;    
+                     <xmp  style="color:green">
+                        <input type="range" class="form-range" id="customRange" name="points1" min="0" max="4">
+                    </xmp>
+                 </p>   
+                <input type="range" class="form-range" id="customRange" name="points1" min="0" max="4">
+                    <h2>Price Range</h2>   
+                    <p>Adı üzerinde fiyat aralığı belirlemeye yarayan Price Range yapısı genellikle alışveriş sitelerinde fiyat filtrelemeye yarar.</p>
+                    <p>
+                       Price range input yapısını aşağıdaki kod yapısı ile oluşturdum;   
+                         <xmp  style="color:green">
+                            <div data-role="rangeslider">
+                                <label for="price-min">Min:</label>
+                                <input type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
+                                <label for="price-max">Max:</label>
+                                <input type="range" name="price-max" id="price-max" value="800" min="0" max="1000">
+                              </div>    
+                        </xmp>
+                     </p>   
+                    <div data-role="rangeslider">
+                        <label for="price-min">Min:</label>
+                        <input type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
+                        <label for="price-max">Max:</label>
+                        <input type="range" name="price-max" id="price-max" value="800" min="0" max="1000">
+                      </div>    
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>
